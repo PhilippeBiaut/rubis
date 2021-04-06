@@ -1,0 +1,32 @@
+<%= form_with(model: camping, local: true) do |form| %>
+  <% if camping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(camping.errors.count, "error") %> prohibited this camping from being saved:</h2>
+
+      <ul>
+        <% camping.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :body %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ville_id %>
+    <%= form.number_field :ville_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
