@@ -1,14 +1,471 @@
-<main>
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
+    <section class="hero-home">
+      <div class="swiper-container hero-slider">
+        <div class="swiper-wrapper dark-overlay">
+          <div class="swiper-slide" style="background-image:url(img/photo/photo-1501621965065-c6e1cf6b53e2.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/photo/photo-1519974719765-e6559eac2575.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/photo/photo-1490578474895-699cd4e2cf59.jpg)"></div>
+          <div class="swiper-slide" style="background-image:url(img/photo/photo-1534850336045-c6c6d287f89e.jpg)"></div>
+        </div>
       </div>
-    </div>
-  </section>
-</main>
+      <div class="container py-6 py-md-7 text-white z-index-20">
+        <div class="row">
+          <div class="col-xl-10">
+            <div class="text-center text-lg-left">
+              <p class="subtitle letter-spacing-4 mb-2 text-secondary text-shadow">Le meilleur moyen de trouver</p>
+              <h1 class="display-3 font-weight-bold text-shadow">Trouvez et partagez...</h1>
+            </div>
+            <div class="search-bar mt-5 p-3 p-lg-1 pl-lg-4">
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-4 d-flex align-items-center form-group">
+                    <input class="form-control border-0 shadow-0" type="text" name="search" placeholder="Que recherchez vous?">
+                  </div>
+                  <div class="col-lg-3 d-flex align-items-center form-group">
+                    <div class="input-label-absolute input-label-absolute-right w-100">
+                      <label class="label-absolute" for="location"><i class="fa fa-crosshairs"></i><span class="sr-only">Ville</span></label>
+                      <input class="form-control border-0 shadow-0" type="text" name="location" placeholder="Location" id="location">
+                    </div>
+                  </div>
+                  <div class="col-lg-3 d-flex align-items-center form-group no-divider">
+                    <select class="selectpicker" title="Categories" data-style="btn-form-control">
+                      <option value="small">Hôtels</option>
+                      <option value="medium">Restaurants</option>
+                      <option value="large">Campings</option>
+                      <option value="x-large">Fastfood</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2">
+                    <button class="btn btn-primary btn-block rounded-xl h-100" type="submit">Trouvez</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 bg-gray-100">
+      <div class="container">
+        <div class="text-center pb-lg-4">
+          <p class="subtitle text-secondary">Ne soyez pas espionné en ligne. Protégez vos données personnelles.</p>
+          <h2 class="mb-5">Vos données vous appartiennent</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div class="px-0 px-lg-3">
+              <div class="icon-rounded bg-primary-light mb-3">
+                <svg class="svg-icon text-primary w-2rem h-2rem">
+                  <use xlink:href="#destination-map-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h5">Dataless:</h3>
+              <p class="text-muted">Finis le stockage, le partage et la vente des données liées à vos recherches.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div class="px-0 px-lg-3">
+              <div class="icon-rounded bg-primary-light mb-3">
+                <svg class="svg-icon text-primary w-2rem h-2rem">
+                  <use xlink:href="#pay-by-card-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h5">Vie privée:</h3>
+              <p class="text-muted">Pas de trackers ou de cookies comme les autres moteurs de recherche.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3 mb-lg-0 text-center">
+            <div class="px-0 px-lg-3">
+              <div class="icon-rounded bg-primary-light mb-3">
+                <svg class="svg-icon text-primary w-2rem h-2rem">
+                  <use xlink:href="#heart-1"> </use>
+                </svg>
+              </div>
+              <h3 class="h5">Pas de bulle:</h3>
+              <p class="text-muted">Résultats de recherche non profilés, découvrez de nouvelles choses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <p class="subtitle text-primary">Découvez le monde avec Plare</p>
+            <h2>Les destinations à découvrir</h2>
+          </div>
+          <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a class="text-muted text-sm" href="/">
+               Découvrir toutes les destinations<i class="fas fa-angle-double-right ml-2"></i></a></div>
+        </div>
+        <div class="swiper-container guides-slider mx-n2 pt-3">
+          <!-- Additional required wrapper-->
+          <div class="swiper-wrapper pb-5">
+            <!-- Slides-->
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0"><a class="tile-link" href="/"></a><img class="bg-image" src="img/photo/new-york.jpg" alt="Card image">
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">New York</h6>
+                  <p class="card-text text-sm">The big apple</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0"><a class="tile-link" href="/"></a><img class="bg-image" src="img/photo/paris.jpg" alt="Card image">
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Paris</h6>
+                  <p class="card-text text-sm">La ville lumière</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0"><a class="tile-link" href="/"></a><img class="bg-image" src="img/photo/barcelona.jpg" alt="Card image">
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Barcelone</h6>
+                  <p class="card-text text-sm">Dalí, Gaudí, ...</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <div class="card card-poster gradient-overlay hover-animate mb-4 mb-lg-0"><a class="tile-link" href="/"></a><img class="bg-image" src="img/photo/prague.jpg" alt="Card image">
+                <div class="card-body overlay-content">
+                  <h6 class="card-title text-shadow text-uppercase">Prague</h6>
+                  <p class="card-text text-sm">La ville aux cent tours</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination d-md-none"> </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-6 bg-gray-100"> 
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <p class="subtitle text-secondary">Les bons plans du moment</p>
+            <h2>Les deals du moment</h2>
+          </div>
+          <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a class="text-muted text-sm" href="/">
+               Voir tous les deals<i class="fas fa-angle-double-right ml-2"></i></a></div>
+        </div>
+        <!-- Slider main container-->
+        <div class="swiper-container swiper-container-mx-negative swiper-init pt-3" data-swiper="{&quot;slidesPerView&quot;:4,&quot;spaceBetween&quot;:20,&quot;loop&quot;:true,&quot;roundLengths&quot;:true,&quot;breakpoints&quot;:{&quot;1200&quot;:{&quot;slidesPerView&quot;:3},&quot;991&quot;:{&quot;slidesPerView&quot;:2},&quot;565&quot;:{&quot;slidesPerView&quot;:1}},&quot;pagination&quot;:{&quot;el&quot;:&quot;.swiper-pagination&quot;,&quot;clickable&quot;:true,&quot;dynamicBullets&quot;:true}}">
+          <!-- Additional required wrapper-->
+          <div class="swiper-wrapper pb-5">
+            <!-- Slides-->
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide h-auto px-2">
+              <!-- place item-->
+              <div class="w-100 h-100 hover-animate" data-marker-id="59c0c8e33b1527bfe2abaf92">
+                <div class="card h-100 border-0 shadow">
+                  <div class="card-img-top overflow-hidden gradient-overlay"> <img class="img-fluid" src="img/photo/photo-1484154218962-a197022b5858.jpg" alt="Modern, Well-Appointed Room"/><a class="tile-link" href="/"></a>
+                    <div class="card-img-overlay-bottom z-index-20">
+                      <div class="media text-white text-sm align-items-center"><img class="avatar avatar-border-white mr-2" src="img/avatar/avatar-0.jpg" alt="Pamela"/>
+                        <div class="media-body">Nadia</div>
+                      </div>
+                    </div>
+                    <div class="card-img-overlay-top text-right"><a class="card-fav-icon position-relative z-index-40" href="javascript: void();"> 
+                        <svg class="svg-icon text-white">
+                          <use xlink:href="#heart-1"> </use>
+                        </svg></a></div>
+                  </div>
+                  <div class="card-body d-flex align-items-center">
+                    <div class="w-100">
+                      <h6 class="card-title"><a class="text-decoration-none text-dark" href="/">Hôtel 5 étoiles</a></h6>
+                      <div class="d-flex card-subtitle mb-3">
+                        <p class="flex-grow-1 mb-0 text-muted text-sm">Double chambre</p>
+                        <p class="flex-shrink-1 mb-0 card-stars text-xs text-right"><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i><i class="fa fa-star text-warning"></i>
+                        </p>
+                      </div>
+                      <p class="card-text text-muted"><span class="h4 text-primary">90€</span> par nuit</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <!-- If we need pagination-->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+ 
+    <section class="py-6 bg-gray-100"> 
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8">
+            <p class="subtitle text-secondary">Découvrez toute l'actualité du web</p>
+            <h2>Nos articles depuis nos blogs</h2>
+          </div>
+          <div class="col-md-4 d-md-flex align-items-center justify-content-end"><a class="text-muted text-sm" href="/">
+               Voir tous les articles<i class="fas fa-angle-double-right ml-2"></i></a></div>
+        </div>
+        <div class="row">
+          <!-- blog item-->
+          <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+            <div class="card shadow border-0 h-100"><a href="/"><img class="img-fluid card-img-top" src="img/photo/photo-1512917774080-9991f1c4c750.jpg" alt="..."/></a>
+              <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">Voyage</a>
+                <h5 class="my-2"><a class="text-dark" href="/">Article 1</a></h5>
+                <p class="text-gray-500 text-sm my-3"><i class="far fa-clock mr-2"></i>7 avril 2021</p>
+                <p class="my-2 text-muted text-sm">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.  Mauris placerat eleif...</p><a class="btn btn-link pl-0" href="/">Lire la suite<i class="fa fa-long-arrow-alt-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- blog item-->
+          <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+            <div class="card shadow border-0 h-100"><a href="/"><img class="img-fluid card-img-top" src="img/photo/photo-1522771739844-6a9f6d5f14af.jpg" alt="..."/></a>
+              <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">Lifestyle</a>
+                <h5 class="my-2"><a class="text-dark" href="/">Article 2</a></h5>
+                <p class="text-gray-500 text-sm my-3"><i class="far fa-clock mr-2"></i>7 avril 2021</p>
+                <p class="my-2 text-muted text-sm">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.  Mauris placerat eleif...</p><a class="btn btn-link pl-0" href="/">Lire la suite<i class="fa fa-long-arrow-alt-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- blog item-->
+          <div class="col-lg-4 col-sm-6 mb-4 hover-animate">
+            <div class="card shadow border-0 h-100"><a href="/"><img class="img-fluid card-img-top" src="img/photo/photo-1482463084673-98272196658a.jpg" alt="..."/></a>
+              <div class="card-body"><a class="text-uppercase text-muted text-sm letter-spacing-2" href="#">Camping</a>
+                <h5 class="my-2"><a class="text-dark" href="/">Article 3</a></h5>
+                <p class="text-gray-500 text-sm my-3"><i class="far fa-clock mr-2"></i>7 avril 2021</p>
+                <p class="my-2 text-muted text-sm">Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.  Mauris placerat eleif...</p><a class="btn btn-link pl-0" href="/">Lire la suite<i class="fa fa-long-arrow-alt-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
