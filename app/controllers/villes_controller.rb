@@ -1,6 +1,8 @@
 class VillesController < ApplicationController
   before_action :set_ville, only: %i[ show edit update destroy ]
 
+  skip_before_action :authenticate_user!, :only => [:index]
+
   # GET /villes or /villes.json
   def index
     @villes = Ville.all
